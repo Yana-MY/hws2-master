@@ -1,7 +1,6 @@
 .message {
     font-family: "Montserrat", sans-serif;
     display: flex;
-
     flex-direction: column;
     margin-bottom: 27px;
     align-items: flex-end;
@@ -10,7 +9,6 @@
 }
 
 .imageAndText {
-
     display: flex;
     align-items: flex-end;
     width: 100%;

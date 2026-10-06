@@ -1,20 +1,44 @@
 .input:focus {
+    border-color: #0062cc;
 }
 
 .input {
+    box-sizing: border-box;
+    width: 372px;
+    height: 36px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    outline: none;
 }
 
 .inputWrapper {
+    position: relative;
+    display: flex;
+
+
 }
 
 .superInput {
+    border: 1px solid #d0d0d0;
 }
 
 .errorInput {
+    border: 1px solid #cc1439;
+    border-radius: 5px;
 }
 
 .errorInput:focus {
+    border-color: #cc1236;
 }
 
 .error {
+    font-weight: 400;
+    font-size: 14px;
+    color: #cc1439;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    margin-bottom: 2px;
+    font-family: Montserrat, sans-serif;
+
 }

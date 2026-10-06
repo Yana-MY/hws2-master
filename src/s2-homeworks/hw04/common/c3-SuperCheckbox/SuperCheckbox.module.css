@@ -8,6 +8,7 @@
 /*input[type="checkbox"] - no*/
 
 .checkbox {
+    flex-shrink: 0;
     appearance: none;
     /*Свойство appearance изменяет внешний вид элемента интерфейса, при сохранении его функции.
        Если задать значение none, то чекбокс пропадет, но по нему, тем не менее,
@@ -15,7 +16,6 @@
 
     width: 18px;
     height: 18px;
-
     background-repeat: no-repeat;
     background-position: center center;
 

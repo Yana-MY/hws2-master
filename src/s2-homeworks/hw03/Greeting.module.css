@@ -2,21 +2,58 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .error {
+    color: #cc0000;
+    font-size: 12px;
+    margin-top: 4px;
+    font-family: "Montserrat", sans-serif;
+    height: 14px; /* Фиксированная высота, чтобы интерфейс не прыгал при появлении ошибки */
 }
 
 .input {
+    width: 372px;
+    height: 36px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding-left: 12px; /* Добавили отступ для текста внутри */
+    outline: none;       /* Убрали стандартный outline браузера */
+    box-sizing: border-box;
+
 }
 
 .input:focus {
+    border: 1px solid #0066cc;
 }
 
 .errorInput {
+    width: 372px;
+    height: 36px;
+    border: 1px solid #cc0000; /* Красная рамка */
+    border-radius: 5px;
+    outline: none; /* Убираем дефолтную черную рамку браузера */
+    padding-left: 12px; /* Чтобы текст не прилипал к краю */
 }
 
 .button {
+    border-radius: 3px;
+    padding: 5px 24px;
+    width: 78px;
+    height: 36px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #fff;
+    background: #06c;
+    border: none;
+    cursor: pointer; /* Делает курсор в виде указательного пальца */
+    transition: background 0.2s ease;
+
 }
 
 .button:focus {
@@ -26,10 +63,21 @@
 }
 
 .button:disabled {
+    background: #0066cc;
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .greeting {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
 }
